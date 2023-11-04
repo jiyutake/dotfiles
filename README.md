@@ -1,4 +1,4 @@
-# ![image](https://github.com/lyeexistindo/dotfiles/blob/main/Pictures/gallery/image.png?raw=true)
+# ![image](https://github.com/lyeexistindo/dotfiles/blob/main/Pictures/gallery/head.png?raw=true)
 ### Overview
 
 This is my dotfiles repo, which hasw most(if not everything) from my configs.
