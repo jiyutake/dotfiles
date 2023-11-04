@@ -9,13 +9,14 @@ You should feel free to clone this repo and use it yourself or take inspirations
 ## **Info**
 <img src="SOURCE" align="right" alt="image">
 
-
+|Info |     |
+|:---:|:---:|
 |Distro|[Arch](https://archlinux.org/)|
-|WM||[BSPWM](https://github.com/baskerville/bspwm)|
+|WM|[Bspwm](https://github.com/baskerville/bspwm)|
 |Terminal|[Alacritty](https://github.com/alacritty/alacritty)|
 |Colorscheme|[Oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim)|
 |Editor|[Neovim](https://github.com/neovim/neovim)|
-
+|:---:|:---:|
 
 # **Gallery**
 <details>
