@@ -8,11 +8,12 @@ You should feel free to clone this repo and use it yourself or take inspirations
 
 ## **Info**
 <img src="SOURCE" align="right" alt="image">
+
+
 |Distro|[Arch](https://archlinux.org/)|
-|:---:|:---:|
-|WM||[BSPWM](SOURCE)|
+|WM||[BSPWM](https://github.com/baskerville/bspwm)|
 |Terminal|[Alacritty](https://github.com/alacritty/alacritty)|
-|Colors|[Oxocarbon](SOURCE)|
+|Colorscheme|[Oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim)|
 |Editor|[Neovim](https://github.com/neovim/neovim)|
 
 
