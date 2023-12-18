@@ -5,17 +5,15 @@ This is my dotfiles repo, which hasw most(if not everything) from my configs.
 You should feel free to clone this repo and use it yourself or take inspirations from it.
 
 ### Installation
-soon :3
+maybe someday :3
 
 ## **Info**
 <img src="SOURCE" align="right" alt="image">
 
-|Info |     |
+|Info |Name |
 |:---:|:---:|
-|Distro|[Arch](https://archlinux.org/)|
 |WM|[Bspwm](https://github.com/baskerville/bspwm)|
 |Terminal|[Alacritty](https://github.com/alacritty/alacritty)|
-|Colorscheme|[Oxocarbon](https://github.com/nyoom-engineering/oxocarbon.nvim)|
 |Editor|[Neovim](https://github.com/neovim/neovim)|
 
 # **Gallery**
