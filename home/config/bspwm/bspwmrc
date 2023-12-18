@@ -1,0 +1,30 @@
+#! /bin/sh
+
+#
+# bspwmrc
+#
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+xsetroot --cursor_name left_ptr
+bspc monitor -d 1 2 3 4 5
+
+feh --nofehbg --bg-fill ~/Pictures/wallpapers/ --randomize
+rule feh state=floating
+
+dunst &
+picom &
+eww daemon &
+sh -c $HOME/.config/bspwm/stuff.sh
+
+rule -a alacritty follow=on focus=on
+rule -a librewolf follow=on focus=on
+
+config top_padding 50
+config window_gap 20
+config split_ratio 0.50
+
+config borderless_monocle false
+config gapless_monocle tru
+config focus_follows_pointer true
+pkill borders ; borders &
+

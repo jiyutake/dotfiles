@@ -1,0 +1,20 @@
+font:
+  normal:
+    family: 0xProto Nerd Font
+    style: Regular
+
+  size: 12
+  offset:
+    x: 0
+    y: 0
+
+window:
+  padding:
+    x: 20
+    y: 15
+
+#import the themes uncommenting (1 at a time!)
+import:
+   # - ~/.config/alacritty/themes/oxocarbon.yml
+   # - ~/.config/alacritty/themes/latte.yml
+    - ~/.config/alacritty/themes/onedark.yml
