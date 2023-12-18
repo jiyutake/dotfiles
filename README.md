@@ -5,7 +5,7 @@ You should feel free to clone this repo and use it yourself or take inspirations
 
 ## Dependencies
 
-    yay -Syu && yay -S --needed bspwm sxhkd eww-x11 feh rofi picom alacritty starship neovim nvim-packer-git dunst librewolf neofetch discord-canary
+    yay -Syu && yay -S --needed bspwm sxhkd eww-x11 feh rofi picom alacritty starship neovim nvim-packer-git dunst librewolf neofetch discord-canary # probably not everything :p
 
 other dependencies:
 - Vencord (for plugins && custom discord css)
