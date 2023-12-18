@@ -30,6 +30,5 @@ good luck
 ![image](https://github.com/lyeexistindo/dotfiles/blob/main/showcase/onedark.png?raw=true)
 ![image](https://github.com/lyeexistindo/dotfiles/blob/main/showcase/latte.png?raw=true)
 ![image](https://github.com/lyeexistindo/dotfiles/blob/main/showcase/oxocarbon.png?raw=true)
-!!
 
 </details>
