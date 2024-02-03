@@ -19,9 +19,10 @@ end)
 beautiful.init(gfs.get_configuration_dir() .. 'theme.lua')
 
 -- Load other files on the configuration directory.
--- Add anything here if you want to include a new file
-require('autostart')
-require('keybinds')
-require('user')
-require('signals')
-require('widgets')
+-- Add anything here if you want to include a new file.
+
+require('autostart') --apps that start along with the window manager
+require('keybinds') --user-configured keybinds for misc WM actions
+require('user') --user configurations such as wallpaper and fonts
+require('signals') --used to get data outside the WM, such as usernames
+require('widgets') --all the configuration widgets, including bars and titlebars
