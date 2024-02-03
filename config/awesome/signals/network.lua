@@ -10,7 +10,7 @@ local function emit_network_status()
         local status = stdout:match("full")
         local status_id = status and 1 or 0
         if status_id ~= status_old then
-            awesome.emit_sigmal('signal::network', status)
+            awesome.emit_signal('signal::network', status)
             status_old = status_id
         end
     end)
