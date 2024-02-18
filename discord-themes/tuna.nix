@@ -1,3 +1,10 @@
+{ config, ... }:
+
+{
+
+  # Make sure to change this path too if you don't want some directories to spawn in randomly
+  home.file.".config/Vencord/themes/tuna.css".text = ''
+    
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
 
 :root {
@@ -24,9 +31,13 @@
   --backgroundsecondaryalt: 24, 24, 32;
   --backgroundtertiary: 24, 24, 34;
   --backgroundfloating: 24, 24, 34;
+  
   /* Settings */
   --settingsicons: 1;
-   --font: "Jua Nerd Font"; /* you can use anything here*/
+   --font: "Jua Nerd Font";
 
-  /* Any custom css down here */
+  /* Any custom css down here! */
+  
+  }'';
+
 }
