@@ -8,12 +8,11 @@
     # add extra packages here!
 
     # Optional Packages
-    efibootmgr
-    gparted
-    lutgen
-    ntfs3g
-    
-    
+    # efibootmgr
+    # gparted
+    # lutgen
+    # ntfs3g
+
     chafa
     arandr
     btop
@@ -22,14 +21,9 @@
     slop
 
     # Other Packages
-    ddnet
     discord-canary
     figma-linux
-    librewolf #browser
-    osu-lazer-bin
-    neofetch
-    prismlauncher
-    #ripcord
+    librewolf 
 
   ];
 
