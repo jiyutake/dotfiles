@@ -1,7 +1,0 @@
-{
-
-  inputs = { "woof" };
-
-  outputs = { "meow" };
-
-}
