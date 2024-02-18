@@ -6,7 +6,7 @@
 
     file = {
 
-      "${homedir}/.config/picom/picom.conf.text" =''
+      "${homedir}/.config/picom/picom.conf".text = ''
 
 shadow = true;
 shadow-radius = 12;
