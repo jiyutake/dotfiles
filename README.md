@@ -18,4 +18,7 @@ As you may probably know, <code>Nix</> and <code>NixOS</code> are hot declarativ
 
 While you have those advantages, i wouldn't recommend getting into Nix because it really is time consuming. Feel free to go ahead and jumping into it, but expect something totally diffrent from other distributions.
 
-## Homr-manager modules
+Speaking about home-manager, right below this is an example of how <code>flake.nix</code>'s modules are located(hopefully):
+
+    ../home-manager
+    
