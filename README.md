@@ -14,7 +14,7 @@ This is my dotfiles repo, which ***soon*** will have some neat configurations fo
 
 hell yeah imdefinitively rewriting this
 
-As you may probably know, <code>Nix</> and <code>NixOS</code> are hot declarative mess (<code>Home-manager</code> included), that lets you infect other hosts with your messy code easily.
+As you may probably know, <code>Nix</code> and <code>NixOS</code> are hot declarative mess (<code>Home-manager</code> included), that lets you infect other hosts with your messy code easily.
 
 While you have those advantages, i wouldn't recommend getting into Nix because it really is time consuming. Feel free to go ahead and jumping into it, but expect something totally diffrent from other distributions.
 
