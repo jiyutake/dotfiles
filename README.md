@@ -21,4 +21,47 @@ While you have those advantages, i wouldn't recommend getting into Nix because i
 Speaking about home-manager, right below this is an example of how <code>flake.nix</code>'s modules are located(hopefully):
 
     ../home-manager
-    
+
+      theme/
+        default.nix
+        ...
+
+      user/
+        packages/
+          terminals/
+
+            st/
+            ...
+  
+            wezterm/
+              ...
+
+            ...
+
+          window-managers/
+            bspwm/
+
+              default.nix
+              sxhkd/
+                ...
+
+              ...
+
+            i3/
+              ...
+
+            ...
+
+          nixpkgs.nix
+          default.nix
+          ...
+
+      hosts/
+        freedom/
+
+          configuration.nix
+          hardware-configuration.nix
+          ...
+
+      flake.nix
+      flake.lock
