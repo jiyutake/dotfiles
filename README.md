@@ -65,3 +65,4 @@ Speaking about home-manager, right below this is an example of how <code>flake.n
 
       flake.nix
       flake.lock
+^ please fix this :(
