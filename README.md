@@ -4,4 +4,4 @@ This is my dotfiles repo, which ***soon*** will have some neat configurations fo
 
 ## Features
 
-* :)
+* <code>Home-manager</code> modularized configurations;
