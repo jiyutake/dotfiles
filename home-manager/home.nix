@@ -4,8 +4,7 @@
   
   imports = [
 
-    ./variables.nix
-    ./shell.nix
+    ./user
     ./programs
   
   ];

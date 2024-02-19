@@ -1,0 +1,10 @@
+{
+
+  imports = [
+
+    ./st
+    #./wezterm #soon
+
+  ];
+
+}
