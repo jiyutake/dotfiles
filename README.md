@@ -20,6 +20,7 @@ This is my dotfiles repo, which ***soon*** will have some neat configurations fo
 * <code>Picom</code> to composite on X11 window managers;
 * <code>Starship</code> as my shell's prompt;
 * <code>Librewolf</code> as my browser (featuring custom css!);
+* <code>EWW</code> for widgets.
 
 ## About Nix
 
