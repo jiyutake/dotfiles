@@ -44,4 +44,6 @@ Speaking about home-manager, right below this is an example of how <code>flake.n
         /shell
         /variables
         ...
+    flake.nix
+    home.nix
     ...
