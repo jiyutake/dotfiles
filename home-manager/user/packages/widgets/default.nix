@@ -1,0 +1,12 @@
+{ config, ... }:
+
+{
+
+  imports = [
+
+    ./eww.nix
+
+  ];
+
+}
+
