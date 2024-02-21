@@ -1,4 +1,9 @@
-### Overview
+
+
+<div align="center">
+<img src="showcase/x.png" alt="showcase">
+
+<br>### Overview
 
 This is my dotfiles repo, which ***soon*** will have some neat configurations for you to take some inspiration from :)
 
