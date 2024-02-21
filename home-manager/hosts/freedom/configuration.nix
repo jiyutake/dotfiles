@@ -72,9 +72,7 @@
     wget
     curl
     home-manager
-    efibootmgr
     neovim
-    unzip
 
   ];
   
