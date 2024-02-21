@@ -10,7 +10,15 @@
 
   home = {
 
-    # file { };
+    file = {
+
+      ".config/eww/widgets/sidemenu/eww.yuck".text = ''
+
+        # eww.yuck
+
+      ''
+
+    };
 
   };
 
