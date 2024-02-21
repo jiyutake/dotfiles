@@ -3,11 +3,13 @@
 <div align="center">
 <img src="showcase/image01.png" alt="showcase">
 
-<br>### Overview
+<br>
+
+## Overview
 
 This is my dotfiles repo, which ***soon*** will have some neat configurations for you to take some inspiration from :)
 
-## Features
+### Features
 
 * <code>Home-manager</code> modularized configurations;
 * <code>Neovim</code> as a text editor;
