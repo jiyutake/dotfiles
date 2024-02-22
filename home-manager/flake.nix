@@ -23,14 +23,15 @@
 
     in {
 
-      homeConfigurations."tiffany" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."tiffany";
+      home-manager.lib.homeManagerConfiguration {
 
         inherit pkgs;
         modules = [
 
-	  ./home.nix
+	        ./home.nix
 	
-	];
+	       ];
 
       };
 
