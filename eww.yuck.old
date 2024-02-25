@@ -1,0 +1,272 @@
+(
+
+  defwindow
+    
+    pill
+
+ :monitor 0
+
+  :hexpand false
+  :vexpand false
+  :wm-ignore false
+  :windowtype "dock"
+  :geometry
+
+  (
+
+    geometry
+
+      :anchor "center left"
+      :x 0 
+      :y 0
+      :width "400px"
+      :height "769px"
+
+  )
+
+  (
+
+    pill :screen 0
+
+  )
+)
+
+(
+
+  defwidget
+
+    pill
+
+      [screen]
+
+  (
+
+    box
+
+      :orientation "v"
+      :space-evenly false
+      :class "pill"
+
+    (
+
+      box
+
+        :halign "start"
+        :space-evenly false
+        
+	(
+
+	  air
+
+	)
+
+      )
+
+    (
+
+      box
+
+        :halign "start"
+	:space-evenly false
+
+	(
+
+	  air
+	
+	)
+
+    )
+
+    (
+
+      box
+
+        :halign "start"
+        :space-evenly false
+        
+	(
+
+	air
+
+	)
+
+      )
+
+    )
+
+  )
+
+(
+
+  defpoll
+
+    time_poll
+
+      :interval "1s" "date +%H:%M"
+
+)
+
+(
+
+  defwidget
+
+    icon-module 
+
+      [icon ?class ?visible]
+
+  (
+
+    box
+
+      :class "${class} icon-module"
+      :orientation "h"
+      :halign "end"
+      :space-evenly false
+      :visible {visible ?: true}
+
+    (
+
+      label
+
+        :class "icon-module__icon"
+	:text "${icon}"
+
+    )
+
+    (
+
+      children
+
+    )
+
+  )
+
+)
+
+(
+
+  defwidget 
+
+    time 
+
+      []
+
+  (
+
+    icon-module
+
+      :class "time"
+      :icon ""
+
+    (
+
+      label 
+
+        :text time_poll
+    
+    )
+
+  )
+
+) 
+
+(
+
+  defwidget
+
+    volume
+
+      []
+
+   (
+
+   box
+
+     :class "volume"
+     :orientation "h"
+     :space-evenly false
+     :halign "end"
+
+    (
+
+      metric 
+
+        :label "   󰖀"
+        :value volume
+        :onchange "amixer -D default sset Master {}%"
+    )
+
+  )
+
+)
+
+(
+
+  defpoll
+
+    volume
+
+      :interval "1s"
+
+        "modules/getvol"
+)
+
+(
+
+  defwidget 
+
+    metric
+
+      [label value onchange]
+
+  (
+
+    box
+
+      :orientation "h"
+      :class "metric"
+      :space-evenly false
+
+    (
+
+      box
+
+        :class "label"
+	  label
+    )
+
+    (
+
+      scale
+
+        :min 0
+        :max 101
+        :active {onchange != ""}
+        :value 101
+        :onchange onchange
+    )
+
+  )
+
+)
+
+(
+
+  defwidget
+
+    air
+
+      []
+
+    (
+
+      box
+
+        :label ""
+	:space_evenly false
+
+    )
+
+)
+
+; EOF
