@@ -1,0 +1,348 @@
+; Imports
+
+(include "./widgets/fetch/eww.yuck")
+(include "./widgets/music/eww.yuck")
+(include "./widgets/menu/eww.yuck")
+
+
+; Foldend
+
+; Bar
+
+(
+
+  defwindow
+
+    bar
+
+      :monitor 0
+      :hexpand false
+      :vexpand false
+      :wm-ignore false
+      :windowtype "dock"
+      :geometry
+
+      (
+
+        geometry
+	  
+	  :anchor "top center"
+          :x 0 
+	  :y 0
+	  :width "100%"
+	  :height "50px"
+          :max-height "30px"
+      
+      )
+
+  (
+
+    bar :screen 0
+  
+  )
+
+)
+
+; foldend
+
+; Bar 
+(
+
+  defwidget
+
+    bar
+
+      [screen]
+
+  (
+
+    box
+
+      :orientation "h"
+      :space-evenly false
+      :class "bar"
+
+    (
+
+      box 
+
+        :halign "start"
+        :space-evenly false
+      
+      (
+
+        profile
+
+      )
+      
+      (
+
+        time
+
+      )
+
+    )
+
+    (
+
+      box
+
+        :halign "center"
+        :spacing 12
+	:hexpand true
+	:space-evenly false
+	
+	(
+
+	  pill
+
+	)
+
+      )
+
+    (
+
+      box
+
+        :halign "end"
+        :spacing 12
+        :hexpand false
+        :space-evenly false
+
+      (
+
+        volume
+
+      )
+
+    )
+
+  )
+
+)
+
+; foldend
+
+; Icon modules
+(
+
+  defwidget
+
+    icon-module
+
+      [icon ?class ?visible]
+
+  (
+
+    box 
+
+      :class "${class} icon-module"
+      :orientation "h"
+      :halign "end"
+      :space-evenly false
+      :visible {visible ?: true}
+
+    (
+
+      label
+
+        :class "icon-module__icon"
+	:text "${icon}"
+
+	)
+    
+    (
+
+    children
+
+    )
+
+  )
+
+)
+
+; foldend
+
+; Modules
+
+(
+
+  defwidget
+
+    time
+
+      []
+
+  (
+
+    icon-module
+
+      :class "time"
+      :icon ""
+
+    (
+
+      label
+
+        :text time_poll
+    )
+
+  )
+
+)
+    
+(
+
+  defpoll time_poll :interval "1s" "date +%H:%M"
+
+)
+
+(
+
+  defwidget
+
+    profile
+
+      []
+
+  (
+
+    box
+
+      :orientation "h"
+      
+      (
+      
+        button
+	
+	  :onclick "
+
+	  eww open menubg --toggle      ;
+	  eww open menu --toggle        ;
+	  eww open fetch --toggle       ;
+	  eww open music --toggle       ;
+
+	  "
+
+          (
+
+	    image
+
+              :path "/home/tiffany/.config/eww/assets/user_icon.png"
+              :image-width "36"
+              :image-height "36"
+              :class "image" 
+
+	  )
+
+      )
+
+  )
+
+)
+
+(
+
+  defwidget
+
+    pill
+
+      []
+
+  (
+
+  button
+
+    :class "pill"
+    :onclick "notify-send hai :3"
+
+    (
+
+      label
+
+        :text "-"
+
+    )
+
+  )
+
+)
+
+(
+
+  defwidget
+
+    volume
+
+      []
+
+   (
+
+     box
+
+       :class "volume"
+       :orientation "h" 
+       :space-evenly false
+       :halign "end"
+    
+      (
+
+        metric
+
+	  :label "   󰖀"
+          :value volume
+	  :onchange "amixer -D default sset Master {}%"
+
+	    )
+
+          )
+
+	)
+
+(
+
+  defpoll 
+
+    volume
+
+      :interval "1s"
+
+        "modules/getvol"
+
+)
+
+(
+
+  defwidget
+
+    metric
+
+      [label value onchange]
+
+  (
+
+    box
+
+      :orientation "h"
+      :class "metric"
+
+      :space-evenly false
+    (
+
+      box
+        :class "label" label)
+    (
+
+    scale
+      :min 0
+      :max 101
+      :active {onchange != ""}
+      :value 101
+      :onchange onchange
+    )
+  )
+)
+
+; foldend
+
+;EOF
