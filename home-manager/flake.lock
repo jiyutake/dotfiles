@@ -35,7 +35,60 @@
 
     },
 
+    "matugen": {
+
+      "inputs": {
+
+        "nixpkgs": "nixpkgs"
+
+      },
+
+      "locked": {
+
+        "lastModified": 1706981050,
+        "narHash": "sha256-QxwHP7lKxmF62azsGssarQg6YDrugaUhK5JChKhlkRQ=",
+        "owner": "InioX",
+        "repo": "matugen",
+        "rev": "f0d47fdffc7e83c8976e497eac46b72c03aec702",
+        "type": "github"
+
+      },
+
+      "original": {
+
+        "owner": "InioX",
+        "repo": "matugen",
+        "type": "github"
+
+      }
+
+    },
+
     "nixpkgs": {
+
+      "locked": {
+
+        "lastModified": 1691186842,
+        "narHash": "sha256-wxBVCvZUwq+XS4N4t9NqsHV4E64cPVqQ2fdDISpjcw0=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "18036c0be90f4e308ae3ebcab0e14aae0336fe42",
+        "type": "github"
+
+      },
+
+      "original": {
+
+        "owner": "nixos",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+
+      }
+
+    },
+
+    "nixpkgs_2": {
 
       "locked": {
 
@@ -64,7 +117,8 @@
       "inputs": {
 
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs"
+        "matugen": "matugen",
+        "nixpkgs": "nixpkgs_2"
 
       }
 
@@ -76,3 +130,4 @@
   "version": 7
 
 }
+

@@ -1,0 +1,182 @@
+
+$L: #ddddee;
+$L2: #ccccdd;
+$L3: #bbbbcc;
+
+$D: #333340;
+$D2: #222230;
+$D3: #181820;
+
+$background: $D3;
+$foreground: $L3;
+$foreground-alt: #ccccdd;
+
+$black: #676876;
+$grey: #7e7e88;
+$white: #ddddee;
+$red: #dd7777;
+$green: #77bb77;
+$yellow: #eecc77;
+$blue: #6699cc;
+$magenta: #cc77aa;
+$cyan: #55bbbb;
+
+// accent for the themed modules
+// wbackground is the background on empty tags
+$accent: $blue;
+$wbackground: $D;
+
+$font: "BlexMono Nerd Font:antialias=true";
+
+* {
+
+  all: unset;
+
+}
+
+window {
+
+  background: $D3;
+
+}
+
+
+.bar {
+
+  font-family: "BlexMono Nerd Font";
+  font-size: 0px;
+  margin: 0px 10px 0px 10px;
+
+}
+
+.pill {
+
+  font-family: "BlexMono Nerd Font";
+  font-size: 1px;
+  background: $L;
+  color: $L;
+  border-radius: 20px;
+  margin: 22px;
+  padding: 0px 50px 0px 50px;
+
+}
+
+.fetch {
+
+  font-family: "BlexMono Nerd Font";
+  background: $D2;
+  margin: 20px;
+  //border-radius: 20px;
+  font-size: 16px;
+
+}
+
+.menu {
+
+  margin: 20px;
+
+}
+
+.profile {
+  margin: 10px 0px 0px 0px;
+}
+
+.time {
+
+  font-family: "BlexMono Nerd Font"; 
+  border-radius: 20px;
+  background-color: $D2;
+  color: $foreground;
+  font-size: 16px;
+  margin: 12px 10px 12px;
+  padding: 0px 10px;
+
+}
+
+.time_vertical{
+  font-family: "Jua Nerd Font";
+  border-radius: 20px;
+  background-color: #222230;
+  color: #ddddee;
+  font-size: 16px;
+  margin: 10px 0px 0px 0px;
+  padding: 10px 10px;
+}
+
+
+.volume{
+
+  font-size: 16px;
+  color: $foreground;
+  background-color: $D2;
+  border-radius: 20px;
+  margin: 12px;
+  & > &__icon {
+
+    margin-right: 20px;
+    margin-left: 10px;
+    font-family: "BlexMono Nerd Font";
+
+  }
+
+}
+
+.metric scale trough highlight {
+  all: unset;
+  background-color: $black;
+  color: #000000;
+  border-radius: 10px;
+  margin: 10px 20px;
+}
+.metric scale trough {
+  all: unset;
+  background-color: $black;
+  border-radius: 10px;
+  min-height: 10px;
+  min-width: 60px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.metric scale trough highlight {
+  all: unset;
+  padding: 3px 3px;
+  background-color: $accent;
+  color: #000000;
+  border-radius: 10px;
+}
+.metric scale trough {
+  all: unset;
+  background-color: $D;
+  border-radius: 10px;
+  min-height: 10px;
+  min-width: 60px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+.text {
+
+  font-family: "BlexMono Nerd Font";
+  background: $background;
+  margin: 20px;
+  font-size: 16px;
+
+}
+
+.mus {
+
+  font-family: "BlexMono Nerd Font";
+  background: $D2;
+  padding: 10px 0px 10px 0px;
+  font-size: 16px;
+
+}
+
+.mus_album {
+
+  font-family: "BlexMono Nerd Font";
+  background: rgba(0,0,0,0);
+  padding: 10px 0px 10px 0px;
+  font-size: 16px;
+
+}

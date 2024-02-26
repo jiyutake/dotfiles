@@ -1,4 +1,4 @@
-{ config, lib, , nixpkgs, pkgs, ... }:
+{ config, lib, pkgs, ... }:
 
 {
 
@@ -37,6 +37,7 @@
 
   };
 
+  time.timeZone = "America/Sao_Paulo";
   i18n.defaultLocale = "en_US.UTF-8";
 
   services.xserver = {
@@ -72,7 +73,14 @@
     wget
     curl
     home-manager
+    arandr
+    efibootmgr
     neovim
+    unzip
+    zstd
+    xclip
+    ntfs3g
+    libnotify
 
   ];
   

@@ -2,7 +2,8 @@
 
   imports = [
 
-    ./pakcages
+    ./applications
+    ./config
     ./shell
     ./variables
 
