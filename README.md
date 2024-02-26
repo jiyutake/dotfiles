@@ -6,7 +6,7 @@
 
 <br>
 
-This is my dotfiles repo, which ***soon*** will have some neat configurations for you to take some inspiration from :)
+This is my <code>old nix dotfiles</code> repo, which has some neat configurations for you to take some inspiration from (please don't refer to this old one here for making new stuff)
 (dont mind the image being *really* outdated)
 
 
