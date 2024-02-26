@@ -19,16 +19,14 @@ This is my <code>old nix dotfiles</code> repo, which has some neat configuration
 * <code>Picom</code> to composite on X11 window managers;
 * <code>Starship</code> as my shell's prompt;
 * <code>Librewolf</code> as my browser (featuring custom css!);
-* <code>Elkowar's wacky widgets</code> for widgets.
+* <code>Elkowar's wacky widgets</code> as a GTK shell.
 
 ## About Nix
 
-hell yeah imdefinitively rewriting this
-
-As you may probably know, <code>Nix</code> and <code>NixOS</code> are hot declarative mess (<code>Home-manager</code> included), that lets you infect other hosts with your messy code easily.
-
+As you may probably know, <code>Nix</code> and <code>NixOS</code> are mostly declarative (<code>Home-manager</code> included), that said it lets you reproduce your configuration on other hosts easily.
 While you have those advantages, i wouldn't recommend getting into Nix because it really is time consuming. Feel free to go ahead and jumping into it, but expect something totally diffrent from other distributions.
 
+While most pepole say it's a really long way to learn it, i think it mostly depends on you if you're learning it quick or not.
 Speaking about home-manager, right below this is an example of how <code>flake.nix</code>'s modules are located(hopefully):
 
     ../home-manager/
@@ -45,6 +43,10 @@ Speaking about home-manager, right below this is an example of how <code>flake.n
         /shell
         /variables
         ...
+    /config
+      /i3
+        ...
+      ...
     flake.nix
     home.nix
     ...
