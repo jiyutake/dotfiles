@@ -1,4 +1,5 @@
-# your code is messy please fix this
+// Colors
+// I dont know if i'm able to modularize this but for now i dont really need to so will keep all the colors here.
 
 $L: #ddddee;
 $L2: #ccccdd;
@@ -22,19 +23,22 @@ $blue: #6699cc;
 $magenta: #cc77aa;
 $cyan: #55bbbb;
 
-// accent for the themed modules
-// wbackground is the background on empty tags
+// Accent for the themed modules
+// $wbackground is the background on empty tags
 $accent: $blue;
 $wbackground: $D;
 
+// Font
 $font: "BlexMono Nerd Font:antialias=true";
 
+// Resets every GTK theme default settings, so there's no conflicts
 * {
 
   all: unset;
 
 }
 
+// Background for every window
 window {
 
   background: $D3;
@@ -42,6 +46,8 @@ window {
 }
 
 
+// CSS for the class bar.
+// You can use SCSS properties for the window class inside curly brackets
 .bar {
 
   font-family: "BlexMono Nerd Font";
