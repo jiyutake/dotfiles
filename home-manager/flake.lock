@@ -1,83 +1,133 @@
 {
+
   "nodes": {
+
     "home-manager": {
+
       "inputs": {
+
         "nixpkgs": [
+
           "nixpkgs"
+
         ]
+
       },
+
       "locked": {
+
         "lastModified": 1708031129,
         "narHash": "sha256-EH20hJfNnc1/ODdDVat9B7aKm0B95L3YtkIRwKLvQG8=",
         "owner": "nix-community",
         "repo": "home-manager",
         "rev": "3d6791b3897b526c82920a2ab5f61d71985b3cf8",
         "type": "github"
+
       },
+
       "original": {
+
         "owner": "nix-community",
         "repo": "home-manager",
         "type": "github"
+
       }
+
     },
+
     "matugen": {
+
       "inputs": {
+
         "nixpkgs": "nixpkgs"
+
       },
+
       "locked": {
+
         "lastModified": 1706981050,
         "narHash": "sha256-QxwHP7lKxmF62azsGssarQg6YDrugaUhK5JChKhlkRQ=",
         "owner": "InioX",
         "repo": "matugen",
         "rev": "f0d47fdffc7e83c8976e497eac46b72c03aec702",
         "type": "github"
+
       },
+
       "original": {
+
         "owner": "InioX",
         "repo": "matugen",
         "type": "github"
+
       }
+
     },
+
     "nixpkgs": {
+
       "locked": {
+
         "lastModified": 1691186842,
         "narHash": "sha256-wxBVCvZUwq+XS4N4t9NqsHV4E64cPVqQ2fdDISpjcw0=",
         "owner": "nixos",
         "repo": "nixpkgs",
         "rev": "18036c0be90f4e308ae3ebcab0e14aae0336fe42",
         "type": "github"
+
       },
+
       "original": {
+
         "owner": "nixos",
         "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
+
       }
+
     },
+
     "nixpkgs_2": {
+
       "locked": {
+
         "lastModified": 1707956935,
         "narHash": "sha256-ZL2TrjVsiFNKOYwYQozpbvQSwvtV/3Me7Zwhmdsfyu4=",
         "owner": "nixos",
         "repo": "nixpkgs",
         "rev": "a4d4fe8c5002202493e87ec8dbc91335ff55552c",
         "type": "github"
+
       },
+
       "original": {
+
         "owner": "nixos",
         "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
+
       }
+
     },
+
     "root": {
+
       "inputs": {
+
         "home-manager": "home-manager",
         "matugen": "matugen",
         "nixpkgs": "nixpkgs_2"
+
       }
+
     }
+
   },
+
   "root": "root",
   "version": 7
+
 }
+
