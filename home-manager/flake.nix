@@ -29,7 +29,6 @@
       homeConfigurations."tiffany" = home-manager.lib.homeManagerConfiguration {
 
         inherit pkgs;
-	# extraSpecialArgs = { inherit spicetify-nix; };
         modules = [
 
 	  ./home.nix
