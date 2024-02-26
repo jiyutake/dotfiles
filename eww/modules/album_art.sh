@@ -4,7 +4,7 @@ ART=$(playerctl metadata -f {{mpris:artUrl}};)
 
       if [ "$ART" == "" ]; then
 
-        echo ~tiffany/.config/eww/assets/nocover.png
+        echo $HOME/.config/eww/assets/nocover.png
 
       else
 
