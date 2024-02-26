@@ -1,4 +1,4 @@
-#!/usr/bin/env /bin/sh
+#!/bin/bash
 
 ART=$(playerctl metadata -f {{mpris:artUrl}};)
 
