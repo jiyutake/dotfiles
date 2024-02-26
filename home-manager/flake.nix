@@ -17,7 +17,7 @@
 
   };
 
-  outputs = { nixpkgs, home-manager, ... }@inputs: #spicetify-nix too
+  outputs = { nixpkgs, home-manager, ... }@inputs:
 
     let
 
