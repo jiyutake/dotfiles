@@ -2,7 +2,7 @@
 ## Overview
 
 <div align="center">
-<img src="showcase/image01.png" alt="showcase">
+<img src="showcase/hi.png" alt="showcase">
 
 <br>
 
