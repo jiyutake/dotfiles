@@ -33,6 +33,7 @@
          alias ls="eza -s=name -a --group-directories-first"
          alias rel="xrdb merge $HOME/.Xresources && kill -USR1 $(pidof st)"
          alias wal="feh --bg-fill --randomize $HOME/Pictures/wallpapers"
+	 alias hm="home-manager"
 
          eval "$(starship init bash)"
 

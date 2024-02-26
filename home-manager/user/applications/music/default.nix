@@ -1,0 +1,9 @@
+{
+
+  imports = [
+
+    #./spicetify # :3
+
+  ];
+
+}

@@ -1,0 +1,158 @@
+(
+
+  defwindow
+    
+    menubg
+
+      :wm-ignore true
+      :monitor 0
+      :windowtype "normal"
+      :geometry
+
+      (
+
+        geometry
+
+          :x "20px"
+	  :y "75px"
+	  :width "400px"
+	  :height "462px"
+	  :anchor "top left"
+
+      )
+
+      (
+
+        empty
+      
+      )
+
+)
+
+(
+
+  defwidget
+
+    empty
+
+      []
+
+  (
+
+    box
+
+      :class "menu"
+
+    (
+
+    label
+
+      :text ""
+
+    )
+
+  )
+
+)
+
+(
+
+  defwindow
+    
+    menu
+
+      :wm-ignore true
+      :monitor 0
+      :windowtype "desktop"
+      :geometry
+
+      (
+
+        geometry
+
+          :x "45px"
+	  :y "75px"
+	  :width "350px"
+	  :height "94px"
+	  :anchor "top left"
+
+      )
+
+      (
+
+        menu
+      
+      )
+
+)
+
+(
+
+  defwidget
+
+    menu
+
+      []
+
+  (
+
+    box
+
+      :orientation "v"
+      :halign "center"
+      :class "menu"
+      :css ".menu{margin:0px;}"
+
+      (
+
+        centerbox
+
+	  :orientation "h"
+
+	  (
+
+	    image
+
+	      :path "/home/tiffany/.config/eww/assets/user_icon.png"
+	      :image-width "48"
+	      :image-height "48"
+
+	  )
+
+	   (
+
+	    label
+              
+	      :class "text"
+	      :style "font-size: 18px;"
+	      :text "Welcome, ${user}!"
+
+	  )
+
+	  (
+
+             label :text ""
+            ;label
+
+            ;  :class "text"
+            ;  :style "color: #6699cc;"
+	    ;  :text "${user}!"
+
+	  )
+
+      )
+
+      ;(
+
+        ;centerbox
+
+	  ;:orientation "h"
+
+      ;)
+
+  )
+
+)
+
+(defpoll host :interval "999h" "uname -n")
+(defpoll user :interval "999h" "whoami")

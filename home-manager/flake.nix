@@ -2,6 +2,9 @@
 
   description = "Take's home-manager configuration flake";
 
+  #inputs.spicetify-nix.url = github:the-argus/spicetify-nix;
+  inputs.matugen.url = "github:/InioX/matugen";
+
   inputs = {
 
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -14,7 +17,7 @@
 
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, home-manager, ... }@inputs: #spicetify-nix too
 
     let
 
@@ -23,15 +26,16 @@
 
     in {
 
-      homeConfigurations."tiffany";
-      home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."tiffany" = home-manager.lib.homeManagerConfiguration {
 
         inherit pkgs;
+	# extraSpecialArgs = { inherit spicetify-nix; };
         modules = [
 
-	        ./home.nix
-	
-	       ];
+	  ./home.nix
+	  {_module.args = { inherit inputs; }; }
+	  	
+	];
 
       };
 

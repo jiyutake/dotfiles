@@ -1,0 +1,157 @@
+(include "./widgets/fetch/eww.yuck")
+(include "./widgets/music/eww.yuck")
+(include "./widgets/menu/eww.yuck")
+
+(
+  defwindow
+    bar
+      :monitor 0
+      :wm-ignore true
+      :windowtype "dock"
+      :geometry
+      (
+        geometry
+	  :anchor "center left"
+	  :x 0
+	  :y 0
+	  :width "50px"
+	  :height "100%"
+      )
+      (
+        bar :screen 0
+      )
+)
+
+(
+  defwidget
+    bar
+      []
+  (
+    box
+      :orientation "v"
+      :space-evenly false
+      :class "bar"
+    (
+      box
+        :orientation "v"
+        :halign "start"
+	:space-evenly false
+      (
+        profile
+      )
+    )
+  )
+)
+
+(
+  defwidget
+    profile
+      []
+  (
+    box
+      :orientation "v"
+      :class "profile"
+      (
+        button
+	  :onclick
+	  "
+	  eww open menubg --toggle;
+	  eww open menu --toggle  ;
+	  eww open fetch --toggle ;
+	  eww open music --toggle ;
+	  "
+	  (
+	    image
+	      :path "/home/tiffany/.config/eww/assets/user_icon.png"
+	      :image-width "36"
+	      :image-height "36"
+	  )
+      )
+  )
+)
+
+
+(
+  defwindow
+    time
+      :screen 0
+      :wm-ignore true
+      :windowtype "desktop"
+      :geometry
+      (
+        geometry
+          :x "5px"
+          :y "-10px"
+          :width "40px"
+          :height "77px"
+	  :anchor "bottom left"
+      )
+      (
+      time
+      )
+)
+
+(
+  defwidget
+    time
+      []
+  (
+    box
+      :orientation "v"
+      :class "time_vertical"
+      :spacing 5
+    (
+      label
+        :text hours
+    )
+    (
+      label
+        :text minutes
+    )
+  )
+)
+(
+  defpoll
+    hours
+      :interval "1s"
+        "date +%H"
+)
+(
+  defpoll
+    minutes
+      :interval "1s"
+        "date +%M"
+)
+
+(
+  defwidget
+    pill
+      []
+  (
+    button
+      :class "pill"
+      :style  "padding: 50px 0px 50px 0px; margin: 20px 0px 20px 0px"
+      :onclick "notify-send 'Notify-send' 'hai :3'"
+      (
+        label
+	  :text ":3333333"
+      )
+  )
+)
+(
+  defwindow
+    pill
+      :screen 0
+      :wm-ignore true
+      :windowtype "dock"
+      :geometry
+      (
+        geometry
+          :x "25px"
+          :y "-10px"
+	  :anchor "center left"
+      )
+      (
+        pill
+      )
+)
