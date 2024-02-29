@@ -1,10 +1,3 @@
-{ config, ... }:
-
-{
-
-  # Make sure to change this path too if you don't want some directories to spawn in randomly
-  home.file.".config/Vencord/themes/tuna.css".text = ''
-    
 @import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css');
 
 :root {
@@ -37,7 +30,3 @@
    --font: "Jua Nerd Font";
 
   /* Any custom css down here! */
-  
-  }'';
-
-}
