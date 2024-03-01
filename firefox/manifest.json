@@ -1,3 +1,7 @@
+"vvvv1":"just in case this dosen't work, get this using firefox-colors plugin with the following link:",
+"vvvv2":"https://color.firefox.com/?theme=XQAAAAIaAQAAAAAAAABBKYhm849SCia2CaaEGccwS-xMDPr1qJSUaapFQDNd1pXYz9fnLdQgz_0oBmlwiGrLP0DmvTQCIZFnM6WLg3jbqEb9_9IdS01VTPN6IWd3awuHuV_F8MdBolOx1M4_WPHiplRN1offjybrQR9IkziRRPwhxvBIn0UfuqnMVvsPlMvGEM-VOn1CLF_yzf8dm7e0TFuwMdxqmedcREgFBgC__8OfWAA",
+
+
 {
 
   "manifest_version": 2,
@@ -9,10 +13,7 @@
 
       "additional_backgrounds": [
 
-        //"images/bg-000-56...ef.svg"
-	//i don't know why this .svg was here, but you don't really require it for the theme.
-	//just in case this dosen't work, get this using firefox-colors plugin with the following link:
-	//https://color.firefox.com/?theme=XQAAAAIaAQAAAAAAAABBKYhm849SCia2CaaEGccwS-xMDPr1qJSUaapFQDNd1pXYz9fnLdQgz_0oBmlwiGrLP0DmvTQCIZFnM6WLg3jbqEb9_9IdS01VTPN6IWd3awuHuV_F8MdBolOx1M4_WPHiplRN1offjybrQR9IkziRRPwhxvBIn0UfuqnMVvsPlMvGEM-VOn1CLF_yzf8dm7e0TFuwMdxqmedcREgFBgC__8OfWAA
+        "images/bg-000-56...ef.svg"
 
       ]
 
