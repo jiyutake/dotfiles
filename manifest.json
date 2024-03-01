@@ -1,0 +1,56 @@
+{
+
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Tuna",
+  "theme": {
+
+    "images": {
+
+      "additional_backgrounds": [
+
+        //"images/bg-000-56...ef.svg"
+	//i don't know why this .svg was here, but you don't really require it for the theme.
+	//just in case this dosen't work, get this using firefox-colors plugin with the following link:
+	//https://color.firefox.com/?theme=XQAAAAIaAQAAAAAAAABBKYhm849SCia2CaaEGccwS-xMDPr1qJSUaapFQDNd1pXYz9fnLdQgz_0oBmlwiGrLP0DmvTQCIZFnM6WLg3jbqEb9_9IdS01VTPN6IWd3awuHuV_F8MdBolOx1M4_WPHiplRN1offjybrQR9IkziRRPwhxvBIn0UfuqnMVvsPlMvGEM-VOn1CLF_yzf8dm7e0TFuwMdxqmedcREgFBgC__8OfWAA
+
+      ]
+
+    },
+
+    "properties": {
+
+      "additional_backgrounds_alignment": [
+
+        "top"
+
+      ],
+
+      "additional_backgrounds_tiling": [
+
+        "repeat"
+
+      ]
+
+    },
+
+    "colors": {
+
+      "toolbar": "rgb(24, 24, 32)",
+      "toolbar_text": "rgb(187, 187, 204)",
+      "frame": "rgb(24, 24, 32)",
+      "tab_background_text": "rgb(187, 187, 204)",
+      "toolbar_field": "rgb(34, 34, 48)",
+      "toolbar_field_text": "rgb(187, 187, 204)",
+      "tab_line": "rgb(24, 24, 32)",
+      "popup": "rgb(34, 34, 48)",
+      "popup_text": "rgb(187, 187, 204)",
+      "icons": "rgb(187, 187, 204)",
+      "tab_selected": "rgb(51, 51, 64)",
+      "tab_loading": "rgb(24, 24, 32)"
+
+    }
+
+  }
+
+}
