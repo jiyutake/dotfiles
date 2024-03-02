@@ -6,8 +6,9 @@
 
 <br>
 
-This is my <code>old nix dotfiles</code> repo, which has some neat configurations for you to take some inspiration from (please don't refer to this old one here for making new stuff)
-(dont mind the image being *really* outdated)
+This is my <code>old nix dotfiles</code> repo, which has some neat configurations!!
+
+For now, i'll stop posting commits here because i want to focus on the making of my AwesomeWM configuration, as well as studies and overall taking care of myself.
 
 
 </div>
